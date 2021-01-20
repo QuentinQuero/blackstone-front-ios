@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48DFD27B057255D0F817D1E3 /* Pods_Blackstone_Fortress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53BB9DF9A746D1E678070CFA /* Pods_Blackstone_Fortress.framework */; };
 		C31501B725B829C800A11D3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501B625B829C800A11D3D /* AppDelegate.swift */; };
 		C31501B925B829C800A11D3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501B825B829C800A11D3D /* SceneDelegate.swift */; };
 		C31501BB25B829C800A11D3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501BA25B829C800A11D3D /* ViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20CF3991F24C81DD9F5A4C96 /* Pods-Blackstone Fortress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackstone Fortress.release.xcconfig"; path = "Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress.release.xcconfig"; sourceTree = "<group>"; };
+		38930F2973EFAA79910C58C8 /* Pods-Blackstone Fortress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackstone Fortress.debug.xcconfig"; path = "Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress.debug.xcconfig"; sourceTree = "<group>"; };
+		53BB9DF9A746D1E678070CFA /* Pods_Blackstone_Fortress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blackstone_Fortress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31501B325B829C800A11D3D /* Blackstone Fortress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blackstone Fortress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31501B625B829C800A11D3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C31501B825B829C800A11D3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48DFD27B057255D0F817D1E3 /* Pods_Blackstone_Fortress.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D3BDA773BF3DEF00ED1FDAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38930F2973EFAA79910C58C8 /* Pods-Blackstone Fortress.debug.xcconfig */,
+				20CF3991F24C81DD9F5A4C96 /* Pods-Blackstone Fortress.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA55F155BB61BD83EA26BEDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53BB9DF9A746D1E678070CFA /* Pods_Blackstone_Fortress.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C31501AA25B829C800A11D3D = {
 			isa = PBXGroup;
 			children = (
 				C31501B525B829C800A11D3D /* Blackstone Fortress */,
 				C31501B425B829C800A11D3D /* Products */,
+				6D3BDA773BF3DEF00ED1FDAA /* Pods */,
+				BA55F155BB61BD83EA26BEDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C31501CA25B829C900A11D3D /* Build configuration list for PBXNativeTarget "Blackstone Fortress" */;
 			buildPhases = (
+				51961EE8E26491094D9BE24C /* [CP] Check Pods Manifest.lock */,
 				C31501AF25B829C800A11D3D /* Sources */,
 				C31501B025B829C800A11D3D /* Frameworks */,
 				C31501B125B829C800A11D3D /* Resources */,
+				440C2FB51BEDB812005FFDE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		440C2FB51BEDB812005FFDE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51961EE8E26491094D9BE24C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blackstone Fortress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C31501AF25B829C800A11D3D /* Sources */ = {
@@ -287,6 +355,7 @@
 		};
 		C31501CB25B829C900A11D3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38930F2973EFAA79910C58C8 /* Pods-Blackstone Fortress.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +375,7 @@
 		};
 		C31501CC25B829C900A11D3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CF3991F24C81DD9F5A4C96 /* Pods-Blackstone Fortress.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
