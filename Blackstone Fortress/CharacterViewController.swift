@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class CharacterViewController: UIViewController {
 
@@ -17,11 +18,16 @@ class CharacterViewController: UIViewController {
     
     private func getCharacters() {
         AF.request("http://localhost:3000/character").responseJSON { response in
-            if let res = response.value as? Dictionary<String,AnyObject>{
-                print(res)
-//                if let name = res["name"] as? String{
-//                    print(name)
-//                }
+            do {
+                let jsonData = response.data!
+                let json = try JSON(data: jsonData)
+            
+                
+                let name = json["data"][0]["name"]
+                print(name)
+            
+            } catch {
+                return
             }
         }
     }
