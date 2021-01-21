@@ -10,11 +10,12 @@
 		48DFD27B057255D0F817D1E3 /* Pods_Blackstone_Fortress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53BB9DF9A746D1E678070CFA /* Pods_Blackstone_Fortress.framework */; };
 		C31501B725B829C800A11D3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501B625B829C800A11D3D /* AppDelegate.swift */; };
 		C31501B925B829C800A11D3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501B825B829C800A11D3D /* SceneDelegate.swift */; };
-		C31501BB25B829C800A11D3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501BA25B829C800A11D3D /* ViewController.swift */; };
 		C31501BE25B829C800A11D3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31501BC25B829C800A11D3D /* Main.storyboard */; };
 		C31501C125B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C31501BF25B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld */; };
 		C31501C325B829C900A11D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31501C225B829C900A11D3D /* Assets.xcassets */; };
 		C31501C625B829C900A11D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31501C425B829C900A11D3D /* LaunchScreen.storyboard */; };
+		C31501DA25B835BE00A11D3D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501D925B835BE00A11D3D /* Character.swift */; };
+		C31501E125B8368200A11D3D /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501E025B8368200A11D3D /* CharacterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +25,13 @@
 		C31501B325B829C800A11D3D /* Blackstone Fortress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blackstone Fortress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31501B625B829C800A11D3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C31501B825B829C800A11D3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C31501BA25B829C800A11D3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C31501BD25B829C800A11D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C31501C025B829C800A11D3D /* Blackstone_Fortress.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blackstone_Fortress.xcdatamodel; sourceTree = "<group>"; };
 		C31501C225B829C900A11D3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C31501C525B829C900A11D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31501C725B829C900A11D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C31501D925B835BE00A11D3D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		C31501E025B8368200A11D3D /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				C31501B625B829C800A11D3D /* AppDelegate.swift */,
+				C31501D925B835BE00A11D3D /* Character.swift */,
 				C31501B825B829C800A11D3D /* SceneDelegate.swift */,
-				C31501BA25B829C800A11D3D /* ViewController.swift */,
 				C31501BC25B829C800A11D3D /* Main.storyboard */,
+				C31501E025B8368200A11D3D /* CharacterViewController.swift */,
 				C31501C225B829C900A11D3D /* Assets.xcassets */,
 				C31501C425B829C900A11D3D /* LaunchScreen.storyboard */,
 				C31501C725B829C900A11D3D /* Info.plist */,
@@ -208,8 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C31501BB25B829C800A11D3D /* ViewController.swift in Sources */,
 				C31501B725B829C800A11D3D /* AppDelegate.swift in Sources */,
+				C31501E125B8368200A11D3D /* CharacterViewController.swift in Sources */,
+				C31501DA25B835BE00A11D3D /* Character.swift in Sources */,
 				C31501C125B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld in Sources */,
 				C31501B925B829C800A11D3D /* SceneDelegate.swift in Sources */,
 			);
