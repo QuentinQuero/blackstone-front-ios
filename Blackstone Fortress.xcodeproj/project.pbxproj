@@ -15,7 +15,7 @@
 		C31501C325B829C900A11D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31501C225B829C900A11D3D /* Assets.xcassets */; };
 		C31501C625B829C900A11D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31501C425B829C900A11D3D /* LaunchScreen.storyboard */; };
 		C31501DA25B835BE00A11D3D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501D925B835BE00A11D3D /* Character.swift */; };
-		C31501E125B8368200A11D3D /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501E025B8368200A11D3D /* CharacterViewController.swift */; };
+		C3632DE425BB09CD003B2607 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3632DE325BB09CD003B2607 /* CharactersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		C31501C525B829C900A11D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31501C725B829C900A11D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C31501D925B835BE00A11D3D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
-		C31501E025B8368200A11D3D /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		C3632DE325BB09CD003B2607 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,17 +84,49 @@
 		C31501B525B829C800A11D3D /* Blackstone Fortress */ = {
 			isa = PBXGroup;
 			children = (
-				C31501B625B829C800A11D3D /* AppDelegate.swift */,
-				C31501D925B835BE00A11D3D /* Character.swift */,
-				C31501B825B829C800A11D3D /* SceneDelegate.swift */,
-				C31501BC25B829C800A11D3D /* Main.storyboard */,
-				C31501E025B8368200A11D3D /* CharacterViewController.swift */,
-				C31501C225B829C900A11D3D /* Assets.xcassets */,
-				C31501C425B829C900A11D3D /* LaunchScreen.storyboard */,
-				C31501C725B829C900A11D3D /* Info.plist */,
-				C31501BF25B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld */,
+				C3D4C24825BEC5C10005B7BF /* Model */,
+				C3D4C24925BEC5C70005B7BF /* View */,
+				C3D4C24725BEC5B80005B7BF /* Controller */,
+				C3D4C24B25BEC6100005B7BF /* Supporting Files */,
 			);
 			path = "Blackstone Fortress";
+			sourceTree = "<group>";
+		};
+		C3D4C24725BEC5B80005B7BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3632DE325BB09CD003B2607 /* CharactersViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C3D4C24825BEC5C10005B7BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C31501D925B835BE00A11D3D /* Character.swift */,
+				C31501BF25B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3D4C24925BEC5C70005B7BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C31501BC25B829C800A11D3D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3D4C24B25BEC6100005B7BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C31501C725B829C900A11D3D /* Info.plist */,
+				C31501C425B829C900A11D3D /* LaunchScreen.storyboard */,
+				C31501C225B829C900A11D3D /* Assets.xcassets */,
+				C31501B825B829C800A11D3D /* SceneDelegate.swift */,
+				C31501B625B829C800A11D3D /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C31501B725B829C800A11D3D /* AppDelegate.swift in Sources */,
-				C31501E125B8368200A11D3D /* CharacterViewController.swift in Sources */,
+				C3632DE425BB09CD003B2607 /* CharactersViewController.swift in Sources */,
 				C31501DA25B835BE00A11D3D /* Character.swift in Sources */,
 				C31501C125B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld in Sources */,
 				C31501B925B829C800A11D3D /* SceneDelegate.swift in Sources */,
