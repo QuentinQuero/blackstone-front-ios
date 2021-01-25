@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48DFD27B057255D0F817D1E3 /* Pods_Blackstone_Fortress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53BB9DF9A746D1E678070CFA /* Pods_Blackstone_Fortress.framework */; };
+		C31501B725B829C800A11D3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501B625B829C800A11D3D /* AppDelegate.swift */; };
+		C31501B925B829C800A11D3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501B825B829C800A11D3D /* SceneDelegate.swift */; };
+		C31501BB25B829C800A11D3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501BA25B829C800A11D3D /* ViewController.swift */; };
+		C31501BE25B829C800A11D3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31501BC25B829C800A11D3D /* Main.storyboard */; };
+		C31501C125B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C31501BF25B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld */; };
+		C31501C325B829C900A11D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31501C225B829C900A11D3D /* Assets.xcassets */; };
+		C31501C625B829C900A11D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31501C425B829C900A11D3D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20CF3991F24C81DD9F5A4C96 /* Pods-Blackstone Fortress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackstone Fortress.release.xcconfig"; path = "Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress.release.xcconfig"; sourceTree = "<group>"; };
+		38930F2973EFAA79910C58C8 /* Pods-Blackstone Fortress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackstone Fortress.debug.xcconfig"; path = "Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress.debug.xcconfig"; sourceTree = "<group>"; };
+		53BB9DF9A746D1E678070CFA /* Pods_Blackstone_Fortress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blackstone_Fortress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31501B325B829C800A11D3D /* Blackstone Fortress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blackstone Fortress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31501B625B829C800A11D3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C31501B825B829C800A11D3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C31501BA25B829C800A11D3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C31501BD25B829C800A11D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C31501C025B829C800A11D3D /* Blackstone_Fortress.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blackstone_Fortress.xcdatamodel; sourceTree = "<group>"; };
+		C31501C225B829C900A11D3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C31501C525B829C900A11D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C31501C725B829C900A11D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C31501B025B829C800A11D3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48DFD27B057255D0F817D1E3 /* Pods_Blackstone_Fortress.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D3BDA773BF3DEF00ED1FDAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38930F2973EFAA79910C58C8 /* Pods-Blackstone Fortress.debug.xcconfig */,
+				20CF3991F24C81DD9F5A4C96 /* Pods-Blackstone Fortress.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA55F155BB61BD83EA26BEDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53BB9DF9A746D1E678070CFA /* Pods_Blackstone_Fortress.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C31501AA25B829C800A11D3D = {
+			isa = PBXGroup;
+			children = (
+				C31501B525B829C800A11D3D /* Blackstone Fortress */,
+				C31501B425B829C800A11D3D /* Products */,
+				6D3BDA773BF3DEF00ED1FDAA /* Pods */,
+				BA55F155BB61BD83EA26BEDA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C31501B425B829C800A11D3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C31501B325B829C800A11D3D /* Blackstone Fortress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C31501B525B829C800A11D3D /* Blackstone Fortress */ = {
+			isa = PBXGroup;
+			children = (
+				C31501B625B829C800A11D3D /* AppDelegate.swift */,
+				C31501B825B829C800A11D3D /* SceneDelegate.swift */,
+				C31501BA25B829C800A11D3D /* ViewController.swift */,
+				C31501BC25B829C800A11D3D /* Main.storyboard */,
+				C31501C225B829C900A11D3D /* Assets.xcassets */,
+				C31501C425B829C900A11D3D /* LaunchScreen.storyboard */,
+				C31501C725B829C900A11D3D /* Info.plist */,
+				C31501BF25B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld */,
+			);
+			path = "Blackstone Fortress";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C31501B225B829C800A11D3D /* Blackstone Fortress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C31501CA25B829C900A11D3D /* Build configuration list for PBXNativeTarget "Blackstone Fortress" */;
+			buildPhases = (
+				51961EE8E26491094D9BE24C /* [CP] Check Pods Manifest.lock */,
+				C31501AF25B829C800A11D3D /* Sources */,
+				C31501B025B829C800A11D3D /* Frameworks */,
+				C31501B125B829C800A11D3D /* Resources */,
+				440C2FB51BEDB812005FFDE7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blackstone Fortress";
+			productName = "Blackstone Fortress";
+			productReference = C31501B325B829C800A11D3D /* Blackstone Fortress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C31501AB25B829C800A11D3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					C31501B225B829C800A11D3D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = C31501AE25B829C800A11D3D /* Build configuration list for PBXProject "Blackstone Fortress" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C31501AA25B829C800A11D3D;
+			productRefGroup = C31501B425B829C800A11D3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C31501B225B829C800A11D3D /* Blackstone Fortress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C31501B125B829C800A11D3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31501C625B829C900A11D3D /* LaunchScreen.storyboard in Resources */,
+				C31501C325B829C900A11D3D /* Assets.xcassets in Resources */,
+				C31501BE25B829C800A11D3D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		440C2FB51BEDB812005FFDE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51961EE8E26491094D9BE24C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blackstone Fortress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C31501AF25B829C800A11D3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31501BB25B829C800A11D3D /* ViewController.swift in Sources */,
+				C31501B725B829C800A11D3D /* AppDelegate.swift in Sources */,
+				C31501C125B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld in Sources */,
+				C31501B925B829C800A11D3D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C31501BC25B829C800A11D3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C31501BD25B829C800A11D3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C31501C425B829C900A11D3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C31501C525B829C900A11D3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C31501C825B829C900A11D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C31501C925B829C900A11D3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C31501CB25B829C900A11D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38930F2973EFAA79910C58C8 /* Pods-Blackstone Fortress.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AHSFT9682;
+				INFOPLIST_FILE = "Blackstone Fortress/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carl.Blackstone-Fortress";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C31501CC25B829C900A11D3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CF3991F24C81DD9F5A4C96 /* Pods-Blackstone Fortress.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AHSFT9682;
+				INFOPLIST_FILE = "Blackstone Fortress/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carl.Blackstone-Fortress";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C31501AE25B829C800A11D3D /* Build configuration list for PBXProject "Blackstone Fortress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31501C825B829C900A11D3D /* Debug */,
+				C31501C925B829C900A11D3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C31501CA25B829C900A11D3D /* Build configuration list for PBXNativeTarget "Blackstone Fortress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31501CB25B829C900A11D3D /* Debug */,
+				C31501CC25B829C900A11D3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C31501BF25B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C31501C025B829C800A11D3D /* Blackstone_Fortress.xcdatamodel */,
+			);
+			currentVersion = C31501C025B829C800A11D3D /* Blackstone_Fortress.xcdatamodel */;
+			path = Blackstone_Fortress.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C31501AB25B829C800A11D3D /* Project object */;
+}
