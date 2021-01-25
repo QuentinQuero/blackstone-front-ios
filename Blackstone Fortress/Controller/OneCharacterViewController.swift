@@ -10,6 +10,8 @@ import UIKit
 class OneCharacterViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var testLabel: UILabel!
+    
     var perso: Character!
 
     override func viewDidLoad() {
@@ -17,6 +19,7 @@ class OneCharacterViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         nameLabel.text = perso.name
+        testLabel.text = perso.name
     }
     
 
