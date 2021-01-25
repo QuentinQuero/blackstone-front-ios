@@ -117,7 +117,9 @@ class CharactersViewController: UITableViewController {
         if let cell = sender as? UITableViewCell {
             let i = self.tableView.indexPath(for: cell)!.row
             if segue.identifier == "segueToCharacter" {
-                let oneCharacterVC = segue.destination as! OneCharacterViewController
+                let tabCtrl: UITabBarController = segue.destination as! UITabBarController
+                let oneCharacterVC = tabCtrl.viewControllers![0] as! OneCharacterViewController
+//                let oneCharacterVC = segue.destination as! OneCharacterViewController
                 oneCharacterVC.perso = characters[i]
             }
         }
