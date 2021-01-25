@@ -114,11 +114,6 @@ class CharactersViewController: UITableViewController {
 //         Get the new view controller using segue.destination.
 //         Pass the selected object to the new view controller.
         
-//        if segue.identifier == "segueToCharacter" {
-//            let oneCharacterVC = segue.destination as! OneCharacterViewController
-//            oneCharacterVC.perso = self.perso
-//        }
-        
         if let cell = sender as? UITableViewCell {
             let i = self.tableView.indexPath(for: cell)!.row
             if segue.identifier == "segueToCharacter" {
