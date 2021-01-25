@@ -191,6 +191,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="a2u-bu-JBl" kind="show" identifier="segueToCharacter" id="2mY-2n-Gwa"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -199,10 +202,48 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Personnages" id="057-ka-2Dq"/>
+                    <connections>
+                        <outlet property="CharacterTable" destination="Unq-VB-rW9" id="vbM-Dh-NQd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWs-GM-fvN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1199" y="-785"/>
+        </scene>
+        <!--One Character View Controller-->
+        <scene sceneID="CfH-5t-a24">
+            <objects>
+                <viewController id="a2u-bu-JBl" customClass="OneCharacterViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aWw-n7-aEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWD-gK-5f6">
+                                <rect key="frame" x="153" y="404" width="84" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84" id="QIN-SW-hvA"/>
+                                    <constraint firstAttribute="height" constant="36" id="QOf-b9-KKA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oQT-cB-VaJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zWD-gK-5f6" firstAttribute="centerY" secondItem="aWw-n7-aEQ" secondAttribute="centerY" id="USq-Zl-3WU"/>
+                            <constraint firstItem="zWD-gK-5f6" firstAttribute="centerX" secondItem="aWw-n7-aEQ" secondAttribute="centerX" id="qFi-kK-Wat"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gr2-Kz-AQ8"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="zWD-gK-5f6" id="edN-24-5On"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbo-el-Xne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2320" y="-786"/>
         </scene>
         <!--Maps-->
         <scene sceneID="Nmb-ou-cJ1">

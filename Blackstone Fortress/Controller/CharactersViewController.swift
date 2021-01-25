@@ -10,8 +10,12 @@ import Alamofire
 import SwiftyJSON
 
 class CharactersViewController: UITableViewController {
-    var characters = [Character]()
 
+    @IBOutlet weak var CharacterTable: UITableView!
+
+    var characters = [Character]()
+    var perso: Character!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,19 +33,17 @@ class CharactersViewController: UITableViewController {
             do {
                 let jsonData = response.data!
                 let json = try JSON(data: jsonData)
-                
                 let res = json["data"]
 
                 for (_, value) in res {
                     if let name = value["name"].string {
-                        
-                        let perso = Character(name: name)
-                        self.characters.append(perso)
+                        self.perso = Character(name: name)
+                        self.characters.append(self.perso)
                     }
-                    print(self.characters)
                 }
-            
-            } catch {
+                self.CharacterTable.reloadData()
+            }
+            catch {
                 return
             }
         }
@@ -57,7 +59,6 @@ class CharactersViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return  self.characters.count
-//        return 2
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,7 +67,6 @@ class CharactersViewController: UITableViewController {
         // Configure the cell...
         let name =  self.characters[indexPath.row].name
         cell.textLabel?.text = name
-        cell.detailTextLabel?.text = "test"
 
         return cell
     }
@@ -106,14 +106,26 @@ class CharactersViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
+    
+    //MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//         Get the new view controller using segue.destination.
+//         Pass the selected object to the new view controller.
+        
+//        if segue.identifier == "segueToCharacter" {
+//            let oneCharacterVC = segue.destination as! OneCharacterViewController
+//            oneCharacterVC.perso = self.perso
+//        }
+        
+        if let cell = sender as? UITableViewCell {
+            let i = self.tableView.indexPath(for: cell)!.row
+            if segue.identifier == "segueToCharacter" {
+                let oneCharacterVC = segue.destination as! OneCharacterViewController
+                oneCharacterVC.perso = characters[i]
+            }
+        }
     }
-    */
 
 }
