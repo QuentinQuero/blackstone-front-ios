@@ -146,6 +146,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="MZ9-iN-5aV" kind="show" identifier="segueToStarship" id="v3m-Kx-oyy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -154,10 +157,44 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Vaisseaux" id="Phq-0B-7ML"/>
+                    <connections>
+                        <outlet property="StarshipTable" destination="ERW-pu-0bf" id="q6V-Gy-v4T"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMa-6l-5KX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1199" y="-60"/>
+        </scene>
+        <!--One Starship View Controller-->
+        <scene sceneID="6Vj-BE-PUq">
+            <objects>
+                <viewController id="MZ9-iN-5aV" customClass="OneStarshipViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKL-sK-fNT">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wH-vq-Tap">
+                                <rect key="frame" x="156.66666666666666" y="404" width="77" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vWl-s9-CBN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4wH-vq-Tap" firstAttribute="centerY" secondItem="HKL-sK-fNT" secondAttribute="centerY" id="bLU-sv-jY7"/>
+                            <constraint firstItem="4wH-vq-Tap" firstAttribute="centerX" secondItem="HKL-sK-fNT" secondAttribute="centerX" id="gOS-MW-5xV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3mu-H3-HIT"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="4wH-vq-Tap" id="9It-dG-UwA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0I-bk-owt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2173.8461538461538" y="-60.426540284360186"/>
         </scene>
         <!--Personnages-->
         <scene sceneID="DAO-88-rIn">
