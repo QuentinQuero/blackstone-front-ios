@@ -6,9 +6,16 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class StarshipsViewController: UITableViewController {
-
+    
+    @IBOutlet weak var StarshipTable: UITableView!
+    
+    var starships = [Starship]()
+    var starship: Starship!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,29 +24,51 @@ class StarshipsViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        getStarships()
     }
 
+    private func getStarships() {
+        AF.request("http://localhost:3000/starship").responseJSON { response in
+            do {
+                let jsonData = response.data!
+                let json = try JSON(data: jsonData)
+                let res = json["data"]
+
+                for (_, value) in res {
+                    
+                    self.starship = Starship(name: value["name"].string!, appui: value["appui"].string!, instalations: value["instalations"].string!, explorateur: value["explorateur"].string!)
+                    
+                    self.starships.append(self.starship)
+                }
+                self.StarshipTable.reloadData()
+            }
+            catch {
+                return
+            }
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.starships.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StarshipCell", for: indexPath)
 
         // Configure the cell...
+        let name =  self.starships[indexPath.row].name
+        cell.textLabel?.text = name
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -76,14 +105,19 @@ class StarshipsViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let cell = sender as? UITableViewCell {
+            let i = self.tableView.indexPath(for: cell)!.row
+            if segue.identifier == "segueToStarship" {
+                let starshipVC = segue.destination as! OneStarshipViewController
+                starshipVC.starship = starships[i]
+            }
+        }
     }
-    */
 
 }
