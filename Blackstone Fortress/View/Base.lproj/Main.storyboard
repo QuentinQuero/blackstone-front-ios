@@ -117,6 +117,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="sU7-wH-Mlg" kind="show" identifier="segueToChallenge" id="FXZ-RI-kHs"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -125,10 +128,44 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Explorations" id="KpW-Fq-RGZ"/>
+                    <connections>
+                        <outlet property="ChallengeTable" destination="FDf-2u-mZE" id="VyO-ea-B8B"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Xw-yD-ZxT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1199" y="640"/>
+        </scene>
+        <!--One Challenge View Controller-->
+        <scene sceneID="c7w-a8-I4U">
+            <objects>
+                <viewController id="sU7-wH-Mlg" customClass="OneChallengeViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qx5-UN-7g6">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxj-eu-4rT">
+                                <rect key="frame" x="167" y="404" width="56" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f8Q-fe-yJ6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cxj-eu-4rT" firstAttribute="centerX" secondItem="qx5-UN-7g6" secondAttribute="centerX" id="4Bj-zR-76S"/>
+                            <constraint firstItem="Cxj-eu-4rT" firstAttribute="centerY" secondItem="qx5-UN-7g6" secondAttribute="centerY" id="m7U-vG-SdQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ayK-sY-I9x"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="Cxj-eu-4rT" id="899-yR-0UT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKO-7u-K7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2122" y="640"/>
         </scene>
         <!--Vaisseaux-->
         <scene sceneID="5Zw-gJ-Olo">
