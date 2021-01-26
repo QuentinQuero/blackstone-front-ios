@@ -139,9 +139,12 @@ class CharactersViewController: UITableViewController {
         if let cell = sender as? UITableViewCell {
             let i = self.tableView.indexPath(for: cell)!.row
             if segue.identifier == "segueToCharacter" {
-                let tabCtrl: UITabBarController = segue.destination as! UITabBarController
+                let tabCtrl = segue.destination as! TabCharacterViewController
+                tabCtrl.name = characters[i].name
                 let oneCharacterVC = tabCtrl.viewControllers![0] as! OneCharacterViewController
                 oneCharacterVC.character = characters[i]
+                let exalteVC = tabCtrl.viewControllers![1] as! ExalteViewController
+                exalteVC.character = characters[i]
             }
         }
     }

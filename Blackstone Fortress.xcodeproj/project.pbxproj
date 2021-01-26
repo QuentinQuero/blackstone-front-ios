@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		48DFD27B057255D0F817D1E3 /* Pods_Blackstone_Fortress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53BB9DF9A746D1E678070CFA /* Pods_Blackstone_Fortress.framework */; };
+		C30DC5F325C012A700D185EA /* TabCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30DC5F225C012A700D185EA /* TabCharacterViewController.swift */; };
+		C30DC5F825C01CCC00D185EA /* ExalteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30DC5F725C01CCC00D185EA /* ExalteViewController.swift */; };
+		C30DC5FF25C04F6600D185EA /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30DC5FE25C04F6600D185EA /* Starship.swift */; };
+		C30DC60225C0510A00D185EA /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30DC60125C0510A00D185EA /* Challenge.swift */; };
+		C30DC60525C0515B00D185EA /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30DC60425C0515B00D185EA /* Map.swift */; };
+		C30DC60B25C0522F00D185EA /* StarshipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30DC60A25C0522F00D185EA /* StarshipsViewController.swift */; };
+		C30DC60E25C0524800D185EA /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30DC60D25C0524800D185EA /* ChallengesViewController.swift */; };
+		C30DC61225C0527C00D185EA /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30DC61125C0527C00D185EA /* MapsViewController.swift */; };
 		C31501B725B829C800A11D3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501B625B829C800A11D3D /* AppDelegate.swift */; };
 		C31501B925B829C800A11D3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501B825B829C800A11D3D /* SceneDelegate.swift */; };
 		C31501BE25B829C800A11D3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31501BC25B829C800A11D3D /* Main.storyboard */; };
@@ -23,6 +31,14 @@
 		20CF3991F24C81DD9F5A4C96 /* Pods-Blackstone Fortress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackstone Fortress.release.xcconfig"; path = "Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress.release.xcconfig"; sourceTree = "<group>"; };
 		38930F2973EFAA79910C58C8 /* Pods-Blackstone Fortress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackstone Fortress.debug.xcconfig"; path = "Target Support Files/Pods-Blackstone Fortress/Pods-Blackstone Fortress.debug.xcconfig"; sourceTree = "<group>"; };
 		53BB9DF9A746D1E678070CFA /* Pods_Blackstone_Fortress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blackstone_Fortress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30DC5F225C012A700D185EA /* TabCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCharacterViewController.swift; sourceTree = "<group>"; };
+		C30DC5F725C01CCC00D185EA /* ExalteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExalteViewController.swift; sourceTree = "<group>"; };
+		C30DC5FE25C04F6600D185EA /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		C30DC60125C0510A00D185EA /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		C30DC60425C0515B00D185EA /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		C30DC60A25C0522F00D185EA /* StarshipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsViewController.swift; sourceTree = "<group>"; };
+		C30DC60D25C0524800D185EA /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
+		C30DC61125C0527C00D185EA /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		C31501B325B829C800A11D3D /* Blackstone Fortress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blackstone Fortress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31501B625B829C800A11D3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C31501B825B829C800A11D3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +81,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C30DC5F525C014C900D185EA /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				C30DC5F725C01CCC00D185EA /* ExalteViewController.swift */,
+				C30DC5F225C012A700D185EA /* TabCharacterViewController.swift */,
+				C3632DE325BB09CD003B2607 /* CharactersViewController.swift */,
+				C3D4C24E25BED6F40005B7BF /* OneCharacterViewController.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		C30DC5FB25C04E7B00D185EA /* Starship */ = {
+			isa = PBXGroup;
+			children = (
+				C30DC60A25C0522F00D185EA /* StarshipsViewController.swift */,
+			);
+			path = Starship;
+			sourceTree = "<group>";
+		};
+		C30DC5FC25C04E9900D185EA /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C30DC61125C0527C00D185EA /* MapsViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C30DC5FD25C04EAD00D185EA /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				C30DC60D25C0524800D185EA /* ChallengesViewController.swift */,
+			);
+			path = Challenge;
+			sourceTree = "<group>";
+		};
 		C31501AA25B829C800A11D3D = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +148,10 @@
 		C3D4C24725BEC5B80005B7BF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C3D4C24E25BED6F40005B7BF /* OneCharacterViewController.swift */,
-				C3632DE325BB09CD003B2607 /* CharactersViewController.swift */,
+				C30DC5F525C014C900D185EA /* Character */,
+				C30DC5FB25C04E7B00D185EA /* Starship */,
+				C30DC5FD25C04EAD00D185EA /* Challenge */,
+				C30DC5FC25C04E9900D185EA /* Map */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -107,7 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				C31501D925B835BE00A11D3D /* Character.swift */,
+				C30DC5FE25C04F6600D185EA /* Starship.swift */,
 				C31501BF25B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld */,
+				C30DC60125C0510A00D185EA /* Challenge.swift */,
+				C30DC60425C0515B00D185EA /* Map.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,12 +302,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30DC5FF25C04F6600D185EA /* Starship.swift in Sources */,
 				C3D4C24F25BED6F40005B7BF /* OneCharacterViewController.swift in Sources */,
+				C30DC60E25C0524800D185EA /* ChallengesViewController.swift in Sources */,
 				C31501B725B829C800A11D3D /* AppDelegate.swift in Sources */,
 				C3632DE425BB09CD003B2607 /* CharactersViewController.swift in Sources */,
 				C31501DA25B835BE00A11D3D /* Character.swift in Sources */,
+				C30DC60B25C0522F00D185EA /* StarshipsViewController.swift in Sources */,
 				C31501C125B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld in Sources */,
 				C31501B925B829C800A11D3D /* SceneDelegate.swift in Sources */,
+				C30DC61225C0527C00D185EA /* MapsViewController.swift in Sources */,
+				C30DC60525C0515B00D185EA /* Map.swift in Sources */,
+				C30DC5F325C012A700D185EA /* TabCharacterViewController.swift in Sources */,
+				C30DC5F825C01CCC00D185EA /* ExalteViewController.swift in Sources */,
+				C30DC60225C0510A00D185EA /* Challenge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

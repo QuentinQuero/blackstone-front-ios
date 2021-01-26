@@ -104,7 +104,7 @@
         <!--Explorations-->
         <scene sceneID="h8c-eD-LKp">
             <objects>
-                <tableViewController id="RJd-n8-uxm" sceneMemberID="viewController">
+                <tableViewController id="RJd-n8-uxm" customClass="ChallengesViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FDf-2u-mZE">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,7 +133,7 @@
         <!--Vaisseaux-->
         <scene sceneID="5Zw-gJ-Olo">
             <objects>
-                <tableViewController id="AJb-lj-3qh" sceneMemberID="viewController">
+                <tableViewController id="AJb-lj-3qh" customClass="StarshipsViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ERW-pu-0bf">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +213,7 @@
         <!--Exalté-->
         <scene sceneID="6PG-Tg-Vm0">
             <objects>
-                <viewController id="TY9-Pz-hq7" sceneMemberID="viewController">
+                <viewController id="TY9-Pz-hq7" customClass="ExalteViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hBE-cy-Evt">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,10 +233,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Exalté" id="itL-cS-mrP"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="ED1-rJ-5RL" id="6fB-sg-6pf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EwP-gl-0xi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3115" y="-880"/>
+            <point key="canvasLocation" x="2992" y="-786"/>
         </scene>
         <!--Classique-->
         <scene sceneID="8Gx-Hj-lfu">
@@ -308,12 +311,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBX-5P-cp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3114" y="-1969"/>
+            <point key="canvasLocation" x="2989" y="-1696"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Character View Controller-->
         <scene sceneID="lCv-yg-f54">
             <objects>
-                <tabBarController id="xKg-hF-2zD" sceneMemberID="viewController">
+                <tabBarController id="xKg-hF-2zD" customClass="TabCharacterViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="wwZ-3N-DCP"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E4G-hV-wtS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -327,12 +330,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wml-rK-qzp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2203" y="-1324"/>
+            <point key="canvasLocation" x="2122" y="-1222"/>
         </scene>
         <!--Maps-->
         <scene sceneID="Nmb-ou-cJ1">
             <objects>
-                <collectionViewController id="w3R-aA-aum" sceneMemberID="viewController">
+                <collectionViewController id="w3R-aA-aum" customClass="MapsViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="TBG-ks-lC6">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
