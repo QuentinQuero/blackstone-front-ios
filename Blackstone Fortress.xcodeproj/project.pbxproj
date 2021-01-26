@@ -161,9 +161,9 @@
 			children = (
 				C31501D925B835BE00A11D3D /* Character.swift */,
 				C30DC5FE25C04F6600D185EA /* Starship.swift */,
-				C31501BF25B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld */,
 				C30DC60125C0510A00D185EA /* Challenge.swift */,
 				C30DC60425C0515B00D185EA /* Map.swift */,
+				C31501BF25B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
