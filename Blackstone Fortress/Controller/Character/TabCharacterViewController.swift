@@ -1,22 +1,21 @@
 //
-//  OneCharacterViewController.swift
+//  TabCharacterViewController.swift
 //  Blackstone Fortress
 //
-//  Created by Carl on 25/01/2021.
+//  Created by Carl on 26/01/2021.
 //
 
 import UIKit
 
-class OneCharacterViewController: UIViewController {
-    @IBOutlet weak var nameLabel: UILabel!
+class TabCharacterViewController: UITabBarController {
     
-    var perso: Character!
+    var name: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        nameLabel.text = perso.name
+        self.navigationItem.title = self.name
     }
     
 

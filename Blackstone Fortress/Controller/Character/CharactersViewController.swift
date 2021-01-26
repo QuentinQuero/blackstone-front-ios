@@ -14,7 +14,7 @@ class CharactersViewController: UITableViewController {
     @IBOutlet weak var CharacterTable: UITableView!
 
     var characters = [Character]()
-    var perso: Character!
+    var character: Character!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,10 +36,32 @@ class CharactersViewController: UITableViewController {
                 let res = json["data"]
 
                 for (_, value) in res {
-                    if let name = value["name"].string {
-                        self.perso = Character(name: name)
-                        self.characters.append(self.perso)
-                    }
+                    
+                   // if let name = value["name"].string {
+                   //      self.perso = Character(name: name)
+                   //     self.characters.append(self.perso)
+                   //   }
+                    
+                    self.character = Character(name: value["name"].string!, image: value["image"].string!,
+                                           vaisseau_id: value["vaisseau_id"].string!,
+                                           life: value["life"].int!, movement: value["movement"].int!,
+                                           defense: value["defense"].string!,
+                                           defense_exalte: value["defense_exalte"].string!,
+                                           agility: value["agility"].string!,
+                                           agility_exalte: value["agility_exalte"].string!,
+                                           vitality: value["vitality"].string!,
+                                           vitality_exalte: value["vitality_exalte"].string!,
+                                           capacity: value["capacity"].array!,
+                                           capacity_exalte: value["capacity_exalte"].array!,
+                                           specialAttack: value["specialAttack"].string!,
+                                           specialAttack_exalte: value["specialAttack_exalte"].string!,
+                                           specialRole: value["specialRole"].array!,
+                                           specialRole_exalte: value["specialRole_exalte"].array!,
+                                           exalte: value["exalte"].array!,
+                                           uniqueattack: value["uniqueattack"].array!,
+                                           uniqueattack_exalte: value["uniqueattack_exalte"].array!)
+                    
+                    self.characters.append(self.character)
                 }
                 self.CharacterTable.reloadData()
             }
@@ -117,8 +139,12 @@ class CharactersViewController: UITableViewController {
         if let cell = sender as? UITableViewCell {
             let i = self.tableView.indexPath(for: cell)!.row
             if segue.identifier == "segueToCharacter" {
-                let oneCharacterVC = segue.destination as! OneCharacterViewController
-                oneCharacterVC.perso = characters[i]
+                let tabCtrl = segue.destination as! TabCharacterViewController
+                tabCtrl.name = characters[i].name
+                let oneCharacterVC = tabCtrl.viewControllers![0] as! OneCharacterViewController
+                oneCharacterVC.character = characters[i]
+                let exalteVC = tabCtrl.viewControllers![1] as! ExalteViewController
+                exalteVC.character = characters[i]
             }
         }
     }
