@@ -144,8 +144,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxj-eu-4rT">
-                                <rect key="frame" x="167" y="404" width="56" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxj-eu-4rT">
+                                <rect key="frame" x="10" y="98" width="370" height="702"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -154,8 +154,10 @@
                         <viewLayoutGuide key="safeArea" id="f8Q-fe-yJ6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Cxj-eu-4rT" firstAttribute="centerX" secondItem="qx5-UN-7g6" secondAttribute="centerX" id="4Bj-zR-76S"/>
-                            <constraint firstItem="Cxj-eu-4rT" firstAttribute="centerY" secondItem="qx5-UN-7g6" secondAttribute="centerY" id="m7U-vG-SdQ"/>
+                            <constraint firstItem="Cxj-eu-4rT" firstAttribute="top" secondItem="f8Q-fe-yJ6" secondAttribute="top" constant="10" id="Jyx-A8-Tc0"/>
+                            <constraint firstItem="f8Q-fe-yJ6" firstAttribute="trailing" secondItem="Cxj-eu-4rT" secondAttribute="trailing" constant="10" id="Vv2-37-1rk"/>
+                            <constraint firstItem="Cxj-eu-4rT" firstAttribute="leading" secondItem="f8Q-fe-yJ6" secondAttribute="leading" constant="10" id="uzo-hk-Hl4"/>
+                            <constraint firstItem="f8Q-fe-yJ6" firstAttribute="bottom" secondItem="Cxj-eu-4rT" secondAttribute="bottom" constant="10" id="vy7-kk-LV4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ayK-sY-I9x"/>
