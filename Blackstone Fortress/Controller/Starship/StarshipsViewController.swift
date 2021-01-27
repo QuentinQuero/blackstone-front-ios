@@ -114,8 +114,12 @@ class StarshipsViewController: UITableViewController {
         if let cell = sender as? UITableViewCell {
             let i = self.tableView.indexPath(for: cell)!.row
             if segue.identifier == "segueToStarship" {
-                let starshipVC = segue.destination as! OneStarshipViewController
-                starshipVC.starship = starships[i]
+                let tabCtrl = segue.destination as! TabStarshipViewController
+                tabCtrl.name = starships[i].name
+                let appuiVC = tabCtrl.viewControllers![0] as! AppuiStarshipViewController
+                appuiVC.starship = starships[i]
+                let supportVC = tabCtrl.viewControllers![1] as! SupportStarshipViewController
+                supportVC.starship = starships[i]
             }
         }
     }

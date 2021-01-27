@@ -147,7 +147,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="MZ9-iN-5aV" kind="show" identifier="segueToStarship" id="v3m-Kx-oyy"/>
+                                    <segue destination="AGx-up-gYK" kind="show" identifier="segueToStarship" id="IY8-q9-DdI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -165,36 +165,144 @@
             </objects>
             <point key="canvasLocation" x="1199" y="-60"/>
         </scene>
-        <!--One Starship View Controller-->
-        <scene sceneID="6Vj-BE-PUq">
+        <!--Support-->
+        <scene sceneID="yNJ-3x-5Gk">
             <objects>
-                <viewController id="MZ9-iN-5aV" customClass="OneStarshipViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HKL-sK-fNT">
+                <viewController id="eE5-IX-nLN" userLabel="Support" customClass="SupportStarshipViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sf5-Af-yeM">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wH-vq-Tap">
-                                <rect key="frame" x="156.66666666666666" y="404" width="77" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instalation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2K-rz-rCC">
+                                <rect key="frame" x="10" y="228" width="370" height="503"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="047-W9-wYI">
+                                <rect key="frame" x="20" y="118" width="350" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explorateur : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vn-16-2Q9">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wE-89-M1c">
+                                        <rect key="frame" x="175" y="0.0" width="175" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="QZi-SX-QK5"/>
+                                    <constraint firstItem="6wE-89-M1c" firstAttribute="width" secondItem="4vn-16-2Q9" secondAttribute="width" id="Rp7-Ip-5Kr"/>
+                                    <constraint firstItem="6wE-89-M1c" firstAttribute="centerY" secondItem="047-W9-wYI" secondAttribute="centerY" id="faP-Mb-5I0"/>
+                                    <constraint firstItem="4vn-16-2Q9" firstAttribute="centerY" secondItem="047-W9-wYI" secondAttribute="centerY" id="ukJ-FT-NCN"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="vWl-s9-CBN"/>
+                        <viewLayoutGuide key="safeArea" id="Nk9-ie-9G0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4wH-vq-Tap" firstAttribute="centerY" secondItem="HKL-sK-fNT" secondAttribute="centerY" id="bLU-sv-jY7"/>
-                            <constraint firstItem="4wH-vq-Tap" firstAttribute="centerX" secondItem="HKL-sK-fNT" secondAttribute="centerX" id="gOS-MW-5xV"/>
+                            <constraint firstItem="Nk9-ie-9G0" firstAttribute="trailing" secondItem="047-W9-wYI" secondAttribute="trailing" constant="20" id="2ci-6X-O0j"/>
+                            <constraint firstItem="c2K-rz-rCC" firstAttribute="top" secondItem="047-W9-wYI" secondAttribute="bottom" constant="30" id="Dvs-44-Wm8"/>
+                            <constraint firstItem="Nk9-ie-9G0" firstAttribute="bottom" secondItem="c2K-rz-rCC" secondAttribute="bottom" constant="30" id="LIi-10-R1C"/>
+                            <constraint firstItem="c2K-rz-rCC" firstAttribute="leading" secondItem="Nk9-ie-9G0" secondAttribute="leading" constant="10" id="cHr-fS-uEg"/>
+                            <constraint firstItem="047-W9-wYI" firstAttribute="leading" secondItem="Nk9-ie-9G0" secondAttribute="leading" constant="20" id="kla-dg-2Lj"/>
+                            <constraint firstItem="Nk9-ie-9G0" firstAttribute="trailing" secondItem="c2K-rz-rCC" secondAttribute="trailing" constant="10" id="pUJ-X0-Mrw"/>
+                            <constraint firstItem="047-W9-wYI" firstAttribute="top" secondItem="Nk9-ie-9G0" secondAttribute="top" constant="30" id="vpa-Z0-5vj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3mu-H3-HIT"/>
+                    <tabBarItem key="tabBarItem" title="Support" id="ldZ-4h-6AU" userLabel="Support"/>
                     <connections>
-                        <outlet property="nameLabel" destination="4wH-vq-Tap" id="9It-dG-UwA"/>
+                        <outlet property="explorateurLabel" destination="6wE-89-M1c" id="GLa-L1-0Vn"/>
+                        <outlet property="supportLabel" destination="c2K-rz-rCC" id="hpI-sO-sO6"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I0I-bk-owt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bPy-GD-yYG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2173.8461538461538" y="-60.426540284360186"/>
+            <point key="canvasLocation" x="3068" y="220"/>
+        </scene>
+        <!--Appui-->
+        <scene sceneID="Ypu-rs-nxm">
+            <objects>
+                <viewController id="0cT-0p-ePh" userLabel="Appui" customClass="AppuiStarshipViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aTu-vM-70d">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appui" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1T-Y5-Z57">
+                                <rect key="frame" x="10" y="228" width="370" height="503"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E31-Ff-Leu">
+                                <rect key="frame" x="20" y="118" width="350" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explorateur : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JT-UU-uLx">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNT-5l-yLa">
+                                        <rect key="frame" x="175" y="0.0" width="175" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jNT-5l-yLa" firstAttribute="width" secondItem="0JT-UU-uLx" secondAttribute="width" id="mb4-rq-T8A"/>
+                                    <constraint firstAttribute="height" constant="80" id="nqI-be-KYA"/>
+                                    <constraint firstItem="0JT-UU-uLx" firstAttribute="centerY" secondItem="E31-Ff-Leu" secondAttribute="centerY" id="qHo-it-Hxf"/>
+                                    <constraint firstItem="jNT-5l-yLa" firstAttribute="centerY" secondItem="E31-Ff-Leu" secondAttribute="centerY" id="t3f-I8-cHP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R7n-8I-FaX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R7n-8I-FaX" firstAttribute="bottom" secondItem="b1T-Y5-Z57" secondAttribute="bottom" constant="30" id="1EK-Lx-WIz"/>
+                            <constraint firstItem="b1T-Y5-Z57" firstAttribute="leading" secondItem="R7n-8I-FaX" secondAttribute="leading" constant="10" id="4O5-Rx-Bgi"/>
+                            <constraint firstItem="E31-Ff-Leu" firstAttribute="leading" secondItem="R7n-8I-FaX" secondAttribute="leading" constant="20" id="BwG-rm-Q2k"/>
+                            <constraint firstItem="R7n-8I-FaX" firstAttribute="trailing" secondItem="b1T-Y5-Z57" secondAttribute="trailing" constant="10" id="Jgr-hb-PaS"/>
+                            <constraint firstItem="b1T-Y5-Z57" firstAttribute="top" secondItem="E31-Ff-Leu" secondAttribute="bottom" constant="30" id="KAs-rH-NLm"/>
+                            <constraint firstItem="E31-Ff-Leu" firstAttribute="top" secondItem="R7n-8I-FaX" secondAttribute="top" constant="30" id="h8a-X2-qx0"/>
+                            <constraint firstItem="R7n-8I-FaX" firstAttribute="trailing" secondItem="E31-Ff-Leu" secondAttribute="trailing" constant="20" id="w53-ln-3E1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Appui" id="4F7-7E-7VF" userLabel="Appui"/>
+                    <connections>
+                        <outlet property="appuiLabel" destination="b1T-Y5-Z57" id="Jt1-qM-K3d"/>
+                        <outlet property="explorateurLabel" destination="jNT-5l-yLa" id="mPr-gk-kd4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSZ-gk-kG6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3068" y="-435"/>
+        </scene>
+        <!--Tab Starship View Controller-->
+        <scene sceneID="inL-Pn-jtI">
+            <objects>
+                <tabBarController id="AGx-up-gYK" customClass="TabStarshipViewController" customModule="Blackstone_Fortress" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mso-dr-Wqy"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wTJ-aS-uRw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0cT-0p-ePh" kind="relationship" relationship="viewControllers" id="1FO-2r-Oba"/>
+                        <segue destination="eE5-IX-nLN" kind="relationship" relationship="viewControllers" id="J0f-qa-vDV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Un-KX-gOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2122" y="-60"/>
         </scene>
         <!--Personnages-->
         <scene sceneID="DAO-88-rIn">
@@ -276,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EwP-gl-0xi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2992" y="-786"/>
+            <point key="canvasLocation" x="3860" y="-990"/>
         </scene>
         <!--Classique-->
         <scene sceneID="8Gx-Hj-lfu">
@@ -348,7 +456,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBX-5P-cp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2989" y="-1696"/>
+            <point key="canvasLocation" x="3858" y="-1873"/>
         </scene>
         <!--Tab Character View Controller-->
         <scene sceneID="lCv-yg-f54">
@@ -367,7 +475,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wml-rK-qzp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122" y="-1222"/>
+            <point key="canvasLocation" x="2122" y="-1084"/>
         </scene>
         <!--Maps-->
         <scene sceneID="Nmb-ou-cJ1">

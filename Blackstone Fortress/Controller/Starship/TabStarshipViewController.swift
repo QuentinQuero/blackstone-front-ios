@@ -1,23 +1,21 @@
 //
-//  OneStarshipViewController.swift
+//  TabStarshipViewController.swift
 //  Blackstone Fortress
 //
-//  Created by Carl on 26/01/2021.
+//  Created by Carl on 27/01/2021.
 //
 
 import UIKit
 
-class OneStarshipViewController: UIViewController {
+class TabStarshipViewController: UITabBarController {
+    
+    var name: String!
 
-    @IBOutlet weak var nameLabel: UILabel!
-    
-    var starship: Starship!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.nameLabel.text = starship.name
+        self.navigationItem.title = self.name
     }
     
 
