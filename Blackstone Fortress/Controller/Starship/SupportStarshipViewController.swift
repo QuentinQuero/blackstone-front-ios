@@ -1,0 +1,36 @@
+//
+//  SupportStarshipViewController.swift
+//  Blackstone Fortress
+//
+//  Created by Carl on 27/01/2021.
+//
+
+import UIKit
+
+class SupportStarshipViewController: UIViewController {
+    
+    @IBOutlet weak var explorateurLabel: UILabel!
+    @IBOutlet weak var supportLabel: UILabel!
+    
+    var starship: Starship!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        self.explorateurLabel.text = starship.explorateur
+        self.supportLabel.text = starship.instalations
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
