@@ -17,6 +17,7 @@ class OneChallengeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.title = challenge.title
         self.titleLabel.text = challenge.title
     }
     
