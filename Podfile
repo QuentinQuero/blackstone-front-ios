@@ -8,5 +8,5 @@ target 'Blackstone Fortress' do
   # Pods for Blackstone Fortress
   pod 'Alamofire', '~> 5.2'
   pod 'SwiftyJSON', '~> 4.0'
-  
+  pod 'Kingfisher', '~> 6.0'
 end

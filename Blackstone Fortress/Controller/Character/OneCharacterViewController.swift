@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import Kingfisher
 
 class OneCharacterViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     var character: Character!
-    // http: //localhost:3000/image/character/explorator/UR-025.jpeg -> IMAGE
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,8 @@ class OneCharacterViewController: UIViewController {
         
         nameLabel.text = character.name
         testLabel.text = "\(character.life)"
+        let url = URL(string: "http://localhost:3000/\(character.image)")
+        imageView.kf.setImage(with: url)
     }
     
 

@@ -1,5 +1,5 @@
 //
-//  ExalteViewController.swift
+//  OneStarshipViewController.swift
 //  Blackstone Fortress
 //
 //  Created by Carl on 26/01/2021.
@@ -7,20 +7,18 @@
 
 import UIKit
 
-class ExalteViewController: UIViewController {
-    
+class OneStarshipViewController: UIViewController {
+
     @IBOutlet weak var nameLabel: UILabel!
     
-    var character: Character!
-
+    var starship: Starship!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        nameLabel.text = "\(character.exalte[0]["possible"])"
-        if let isExalte = character.exalte[0] as Any? {
-            print(isExalte)
-        }
+        self.navigationItem.title = starship.name
+        self.nameLabel.text = starship.name
     }
     
 
