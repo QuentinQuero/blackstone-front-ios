@@ -273,6 +273,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mcp-vV-6Vv">
+                                                <rect key="frame" x="48" y="389" width="295" height="373"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <constraints>
@@ -305,13 +309,14 @@
                     <tabBarItem key="tabBarItem" title="Classique" id="XtC-eP-8gQ"/>
                     <size key="freeformSize" width="390" height="1325"/>
                     <connections>
+                        <outlet property="imageView" destination="Mcp-vV-6Vv" id="cid-6c-zhZ"/>
                         <outlet property="nameLabel" destination="k8U-CA-S5y" id="ey1-rP-YQY"/>
                         <outlet property="testLabel" destination="ZW6-6B-Xnq" id="Ij8-3U-5dA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBX-5P-cp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2989" y="-1696"/>
+            <point key="canvasLocation" x="2987.6923076923076" y="-1696.5639810426539"/>
         </scene>
         <!--Tab Character View Controller-->
         <scene sceneID="lCv-yg-f54">
