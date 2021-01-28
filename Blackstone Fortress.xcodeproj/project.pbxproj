@@ -23,6 +23,7 @@
 		C31501C325B829C900A11D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31501C225B829C900A11D3D /* Assets.xcassets */; };
 		C31501C625B829C900A11D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31501C425B829C900A11D3D /* LaunchScreen.storyboard */; };
 		C31501DA25B835BE00A11D3D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501D925B835BE00A11D3D /* Character.swift */; };
+		C3330A6225C302AD0027EA04 /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3330A6125C302AD0027EA04 /* MapCollectionViewCell.swift */; };
 		C34B4B6725C16F3F0025110F /* TabStarshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B4B6625C16F3F0025110F /* TabStarshipViewController.swift */; };
 		C34B4B6A25C16F610025110F /* AppuiStarshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B4B6925C16F610025110F /* AppuiStarshipViewController.swift */; };
 		C34B4B6D25C16F710025110F /* SupportStarshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B4B6C25C16F710025110F /* SupportStarshipViewController.swift */; };
@@ -52,6 +53,7 @@
 		C31501C525B829C900A11D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31501C725B829C900A11D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C31501D925B835BE00A11D3D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		C3330A6125C302AD0027EA04 /* MapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCollectionViewCell.swift; sourceTree = "<group>"; };
 		C34B4B6625C16F3F0025110F /* TabStarshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStarshipViewController.swift; sourceTree = "<group>"; };
 		C34B4B6925C16F610025110F /* AppuiStarshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppuiStarshipViewController.swift; sourceTree = "<group>"; };
 		C34B4B6C25C16F710025110F /* SupportStarshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportStarshipViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		C30DC5FC25C04E9900D185EA /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				C3330A6125C302AD0027EA04 /* MapCollectionViewCell.swift */,
 				C30DC61125C0527C00D185EA /* MapsViewController.swift */,
 			);
 			path = Map;
@@ -323,6 +326,7 @@
 				C382D0CE25C063A800457483 /* OneChallengeViewController.swift in Sources */,
 				C30DC60B25C0522F00D185EA /* StarshipsViewController.swift in Sources */,
 				C34B4B6A25C16F610025110F /* AppuiStarshipViewController.swift in Sources */,
+				C3330A6225C302AD0027EA04 /* MapCollectionViewCell.swift in Sources */,
 				C31501C125B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld in Sources */,
 				C31501B925B829C800A11D3D /* SceneDelegate.swift in Sources */,
 				C30DC61225C0527C00D185EA /* MapsViewController.swift in Sources */,

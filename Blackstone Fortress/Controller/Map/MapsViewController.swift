@@ -7,9 +7,12 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "MapCell"
 
 class MapsViewController: UICollectionViewController {
+    
+    let dataSource: [String] = ["USA", "Brazil", "China", "United Kingdom", "Japan", "Mexico", "India"]
+    // http ://localhost:3000/images/maps/BlackstoneBattle-Nov17-AmbushCard10rf.jpg -> IMAGE
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +21,7 @@ class MapsViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -37,17 +40,25 @@ class MapsViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return dataSource.count 
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        
+        var cell = UICollectionViewCell()
+        
+        if let countryCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? MapCollectionViewCell {
+            
+            countryCell.configure(with: dataSource[indexPath.row ])
+            
+            cell = countryCell
+        }
     
         // Configure the cell
     
@@ -56,6 +67,10 @@ class MapsViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDelegate
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(dataSource[indexPath.row])
+    }
+    
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
