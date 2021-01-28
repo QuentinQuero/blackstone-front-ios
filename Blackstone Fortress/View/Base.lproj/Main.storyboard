@@ -386,8 +386,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXALTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ED1-rJ-5RL">
-                                <rect key="frame" x="143" y="404" width="104" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXALTE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ED1-rJ-5RL">
+                                <rect key="frame" x="10" y="98" width="370" height="653"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -396,8 +396,10 @@
                         <viewLayoutGuide key="safeArea" id="GDT-Ef-1hq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ED1-rJ-5RL" firstAttribute="centerX" secondItem="hBE-cy-Evt" secondAttribute="centerX" id="piM-6b-TJF"/>
-                            <constraint firstItem="ED1-rJ-5RL" firstAttribute="centerY" secondItem="hBE-cy-Evt" secondAttribute="centerY" id="wyV-ir-Egb"/>
+                            <constraint firstItem="GDT-Ef-1hq" firstAttribute="trailing" secondItem="ED1-rJ-5RL" secondAttribute="trailing" constant="10" id="FCX-ch-gkT"/>
+                            <constraint firstItem="ED1-rJ-5RL" firstAttribute="leading" secondItem="GDT-Ef-1hq" secondAttribute="leading" constant="10" id="L9N-Rk-rf4"/>
+                            <constraint firstItem="GDT-Ef-1hq" firstAttribute="bottom" secondItem="ED1-rJ-5RL" secondAttribute="bottom" constant="10" id="ZTD-9g-nZo"/>
+                            <constraint firstItem="ED1-rJ-5RL" firstAttribute="top" secondItem="GDT-Ef-1hq" secondAttribute="top" constant="10" id="soL-D5-KiT"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Exalté" id="itL-cS-mrP"/>
@@ -479,7 +481,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBX-5P-cp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3858" y="-1873"/>
+            <point key="canvasLocation" x="3856.9230769230767" y="-1873.5781990521325"/>
         </scene>
         <!--Tab Character View Controller-->
         <scene sceneID="lCv-yg-f54">

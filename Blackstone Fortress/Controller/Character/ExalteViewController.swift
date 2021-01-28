@@ -17,11 +17,10 @@ class ExalteViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        nameLabel.text = "\(character.exalte)"
-//        if let isExalte = character.exalte[0]["possible"] {
-//            print(character.exalte[0]["possible"])
-//            
-//        }
+//        nameLabel.text = "\(character.exalte[0]["possible"])"
+        if let isExalte = character.exalte[0] as Any? {
+            print(isExalte)
+        }
     }
     
 
