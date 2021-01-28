@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MapCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
-    func configure(with countryName: String) {
-        testLabel.text = countryName
+    func configure(with mapURL: String) {
+        let url = URL(string: "http://localhost:3000/\(mapURL)")
+        imageView.kf.setImage(with: url)
     }
 }

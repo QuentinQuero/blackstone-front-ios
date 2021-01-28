@@ -18,7 +18,7 @@ class SupportStarshipViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.explorateurLabel.text = starship.explorateur
+        self.explorateurLabel.text = "Explorateur : \(starship.explorateur)"
         self.supportLabel.text = starship.instalations
     }
     
