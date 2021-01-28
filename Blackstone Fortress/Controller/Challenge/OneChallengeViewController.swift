@@ -10,6 +10,7 @@ import UIKit
 class OneChallengeViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var scrollLabel: UILabel!
     
     var challenge: Challenge!
     
@@ -19,6 +20,8 @@ class OneChallengeViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationItem.title = challenge.title
         self.titleLabel.text = challenge.description
+        
+        self.scrollLabel.text = challenge.description
     }
     
 
