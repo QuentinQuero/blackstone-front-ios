@@ -127,7 +127,9 @@
                             <outlet property="delegate" destination="RJd-n8-uxm" id="DwN-bN-4Eq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Explorations" id="KpW-Fq-RGZ"/>
+                    <navigationItem key="navigationItem" title="Explorations" id="KpW-Fq-RGZ">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Tfo-RE-Nc9"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="ChallengeTable" destination="FDf-2u-mZE" id="VyO-ea-B8B"/>
                     </connections>
@@ -146,7 +148,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxj-eu-4rT">
                                 <rect key="frame" x="10" y="98" width="370" height="702"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
