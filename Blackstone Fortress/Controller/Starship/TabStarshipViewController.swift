@@ -1,26 +1,21 @@
 //
-//  ExalteViewController.swift
+//  TabStarshipViewController.swift
 //  Blackstone Fortress
 //
-//  Created by Carl on 26/01/2021.
+//  Created by Carl on 27/01/2021.
 //
 
 import UIKit
 
-class ExalteViewController: UIViewController {
+class TabStarshipViewController: UITabBarController {
     
-    @IBOutlet weak var nameLabel: UILabel!
-    
-    var character: Character!
+    var name: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        nameLabel.text = "\(character.exalte[0]["possible"])"
-        if let isExalte = character.exalte[0] as Any? {
-            print(isExalte)
-        }
+        self.navigationItem.title = self.name
     }
     
 

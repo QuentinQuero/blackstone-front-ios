@@ -1,26 +1,25 @@
 //
-//  ExalteViewController.swift
+//  SupportStarshipViewController.swift
 //  Blackstone Fortress
 //
-//  Created by Carl on 26/01/2021.
+//  Created by Carl on 27/01/2021.
 //
 
 import UIKit
 
-class ExalteViewController: UIViewController {
+class SupportStarshipViewController: UIViewController {
     
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var explorateurLabel: UILabel!
+    @IBOutlet weak var supportLabel: UILabel!
     
-    var character: Character!
+    var starship: Starship!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        nameLabel.text = "\(character.exalte[0]["possible"])"
-        if let isExalte = character.exalte[0] as Any? {
-            print(isExalte)
-        }
+        self.explorateurLabel.text = "Explorateur : \(starship.explorateur)"
+        self.supportLabel.text = starship.instalations
     }
     
 

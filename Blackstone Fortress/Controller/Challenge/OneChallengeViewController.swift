@@ -1,5 +1,5 @@
 //
-//  ExalteViewController.swift
+//  OneChallengeViewController.swift
 //  Blackstone Fortress
 //
 //  Created by Carl on 26/01/2021.
@@ -7,20 +7,21 @@
 
 import UIKit
 
-class ExalteViewController: UIViewController {
+class OneChallengeViewController: UIViewController {
     
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
-    var character: Character!
-
+    var challenge: Challenge!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        nameLabel.text = "\(character.exalte[0]["possible"])"
-        if let isExalte = character.exalte[0] as Any? {
-            print(isExalte)
-        }
+        self.titleLabel.text = challenge.title
+        self.subtitleLabel.text = "challenge.subtitle"
+        self.descriptionLabel.text = challenge.description
     }
     
 

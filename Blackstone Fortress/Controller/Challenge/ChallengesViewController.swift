@@ -6,9 +6,16 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ChallengesViewController: UITableViewController {
 
+    @IBOutlet weak var ChallengeTable: UITableView!
+    
+    var challenges = [Challenge]()
+    var challenge: Challenge!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,29 +24,50 @@ class ChallengesViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        getChallenges()
     }
 
+    private func getChallenges() {
+        AF.request("http://localhost:3000/challenges").responseJSON { response in
+            do {
+                let jsonData = response.data!
+                let json = try JSON(data: jsonData)
+                let res = json["data"]
+
+                for (_, value) in res {
+                    
+                    self.challenge = Challenge(title: value["title"].string!, description: value["description"].string!)
+                    
+                    self.challenges.append(self.challenge)
+                }
+                self.ChallengeTable.reloadData()
+            }
+            catch {
+                return
+            }
+        }
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.challenges.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ChallengeCell", for: indexPath)
 
         // Configure the cell...
+        let title =  self.challenges[indexPath.row].title
+        cell.textLabel?.text = title
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -76,14 +104,18 @@ class ChallengesViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let cell = sender as? UITableViewCell {
+            let i = self.tableView.indexPath(for: cell)!.row
+            if segue.identifier == "segueToChallenge" {
+                let challengeVC = segue.destination as! OneChallengeViewController
+                challengeVC.challenge = challenges[i]
+            }
+        }
     }
-    */
-
 }
