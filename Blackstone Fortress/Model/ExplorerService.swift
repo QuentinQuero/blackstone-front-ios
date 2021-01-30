@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class ExplorerService {
+        
+    static let shared = ExplorerService()
+    private init() {}
+
+    private(set) var explorers = [StockExplorer]()
+
+    func add(explorer: StockExplorer) {
+        explorers.append(explorer)
+    }
+}

@@ -14,7 +14,7 @@ class OneCharacterViewController: UIViewController {
     @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    var character: Character!
+    var character: Classic!
 
     override func viewDidLoad() {
         super.viewDidLoad()

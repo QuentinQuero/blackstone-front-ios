@@ -167,7 +167,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Xw-yD-ZxT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122" y="653"/>
+            <point key="canvasLocation" x="3148" y="1352"/>
         </scene>
         <!--One Challenge View Controller-->
         <scene sceneID="ht0-yo-oHb">
@@ -249,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUu-v8-81h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3037" y="788"/>
+            <point key="canvasLocation" x="4426" y="1351"/>
         </scene>
         <!--Vaisseaux-->
         <scene sceneID="5Zw-gJ-Olo">
@@ -286,7 +286,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMa-6l-5KX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1199" y="-60"/>
+            <point key="canvasLocation" x="2203" y="127"/>
         </scene>
         <!--Support-->
         <scene sceneID="yNJ-3x-5Gk">
@@ -330,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPy-GD-yYG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3037" y="78"/>
+            <point key="canvasLocation" x="4426" y="461"/>
         </scene>
         <!--Appui-->
         <scene sceneID="Ypu-rs-nxm">
@@ -374,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSZ-gk-kG6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3037" y="-577"/>
+            <point key="canvasLocation" x="4425" y="-223"/>
         </scene>
         <!--Tab Starship View Controller-->
         <scene sceneID="inL-Pn-jtI">
@@ -396,7 +396,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Un-KX-gOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122" y="-60"/>
+            <point key="canvasLocation" x="3149" y="127"/>
         </scene>
         <!--Personnages-->
         <scene sceneID="DAO-88-rIn">
@@ -433,7 +433,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWs-GM-fvN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1199" y="-785"/>
+            <point key="canvasLocation" x="2202" y="-928"/>
         </scene>
         <!--Exalté-->
         <scene sceneID="6PG-Tg-Vm0">
@@ -466,7 +466,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EwP-gl-0xi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3860" y="-990"/>
+            <point key="canvasLocation" x="4423" y="-928"/>
         </scene>
         <!--Classique-->
         <scene sceneID="8Gx-Hj-lfu">
@@ -542,7 +542,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBX-5P-cp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2987.6923076923076" y="-1696.5639810426539"/>
+            <point key="canvasLocation" x="4426" y="-1819"/>
         </scene>
         <!--Tab Character View Controller-->
         <scene sceneID="lCv-yg-f54">
@@ -564,7 +564,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wml-rK-qzp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122" y="-1084"/>
+            <point key="canvasLocation" x="3148" y="-928"/>
         </scene>
         <!--Explorations-->
         <scene sceneID="7IS-A3-H7z">
@@ -586,7 +586,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fW1-7y-Rpa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1198" y="867"/>
+            <point key="canvasLocation" x="2202" y="1639"/>
         </scene>
         <!--Maps-->
         <scene sceneID="Nmb-ou-cJ1">
@@ -644,7 +644,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bX-LR-OFm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122" y="1469"/>
+            <point key="canvasLocation" x="3148" y="2144"/>
         </scene>
         <!--One Map View Controller-->
         <scene sceneID="bXz-rz-9b8">
@@ -673,7 +673,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeQ-P8-gZf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3037" y="1469"/>
+            <point key="canvasLocation" x="4426" y="2143"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.1003820077" green="0.32964503769999998" blue="0.49239641429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

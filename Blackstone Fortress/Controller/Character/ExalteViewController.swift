@@ -11,16 +11,12 @@ class ExalteViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
-    var character: Character!
+    var character: Exalte!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        nameLabel.text = "\(character.exalte[0]["possible"])"
-        if let isExalte = character.exalte[0] as Any? {
-            print(isExalte)
-        }
     }
     
 

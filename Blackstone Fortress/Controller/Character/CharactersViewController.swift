@@ -13,8 +13,10 @@ class CharactersViewController: UITableViewController {
 
     @IBOutlet weak var CharacterTable: UITableView!
 
-    var characters = [Character]()
-    var character: Character!
+//    var characters = [Character]()
+//    var character: Character!
+    
+    var character = Array<Any>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,7 @@ class CharactersViewController: UITableViewController {
     }
     
     private func getCharacters() {
-        AF.request("http://localhost:3000/character/6013de2acbddc40719b5f67a").responseJSON { response in
+        AF.request("http://localhost:3000/character").responseJSON { response in
             do {
                 let jsonData = response.data!
                 let json = try JSON(data: jsonData)
@@ -37,30 +39,42 @@ class CharactersViewController: UITableViewController {
 
                 for (_, value) in res {
                     
-                    print(value)
+                    let resClassic = value["classic"]
                     
-//                    self.character = Character(name: value["name"].string!, image: value["image"].string!,
-//                                           vaisseau_id: value["vaisseau_id"].string!,
-//                                           life: value["life"].int!, movement: value["movement"].int!,
-//                                           defense: value["defense"].string!,
-//                                           defense_exalte: value["defense_exalte"].string!,
-//                                           agility: value["agility"].string!,
-//                                           agility_exalte: value["agility_exalte"].string!,
-//                                           vitality: value["vitality"].string!,
-//                                           vitality_exalte: value["vitality_exalte"].string!,
-//                                           capacity: value["capacity"].array!,
-//                                           capacity_exalte: value["capacity_exalte"].array!,
-//                                           specialAttack: value["specialAttack"].string!,
-//                                           specialAttack_exalte: value["specialAttack_exalte"].string!,
-//                                           specialRole: value["specialRole"].array!,
-//                                           specialRole_exalte: value["specialRole_exalte"].array!,
-//                                           exalte: value["exalte"].array!,
-//                                           uniqueattack: value["uniqueattack"].array!,
-//                                           uniqueattack_exalte: value["uniqueattack_exalte"].array!)
-//
-//                    self.characters.append(self.character)
+                    let classic = Classic()
+                    classic.name = resClassic["name"].string!
+                    classic.movement = resClassic["movement"].string!
+                    classic.defense = resClassic["defense"].string!
+                    classic.agility = resClassic["agility"].string!
+                    classic.vitality = resClassic["vitality"].string!
+                    classic.life = resClassic["life"].string!
+//                    classic.capacity = resClassic["capacity"].array!
+//                    classic.uniqueattack = resClassic["uniqueattack"].array!
+//                    classic.specialRole = resClassic["specialRole"].array!
+                    classic.image = resClassic["image"].string!
+                    classic.vaisseau = resClassic["vaisseau_id"].string!
+//                    classic.exalte = resClassic["exalte"].array!
+                    
+                    let resExalte = value["exalte"]
+                    
+                    let exalte = Exalte()
+                    exalte.name = resClassic["name"].string!
+                    exalte.movement = resExalte["movement"].string!
+                    exalte.defense = resExalte["defense"].string!
+                    exalte.agility = resExalte["agility"].string!
+                    exalte.vitality = resExalte["vitality"].string!
+                    exalte.life = resClassic["life"].string!
+//                    exalte.capacity = resExalte["capacity"].array!
+//                    exalte.uniqueattack = resExalte["uniqueattack"].array!
+//                    exalte.specialRole = resExalte["specialRole"].array!
+                    exalte.image = resClassic["image"].string!
+                    exalte.vaisseau = resClassic["vaisseau_id"].string!
+                    
+                    let stock = StockExplorer(classic: classic, exalte: exalte)
+                    
+                    ExplorerService.shared.add(explorer: stock)
                 }
-//                self.CharacterTable.reloadData()
+                self.CharacterTable.reloadData()
             }
             catch {
                 return
@@ -77,14 +91,14 @@ class CharactersViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return  self.characters.count
+        return  ExplorerService.shared.explorers.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath)
 
         // Configure the cell...
-        let name =  self.characters[indexPath.row].name
+        let name =  ExplorerService.shared.explorers[indexPath.row].classic.name
         cell.textLabel?.text = name
 
         return cell
@@ -137,11 +151,11 @@ class CharactersViewController: UITableViewController {
             let i = self.tableView.indexPath(for: cell)!.row
             if segue.identifier == "segueToCharacter" {
                 let tabCtrl = segue.destination as! TabCharacterViewController
-                tabCtrl.name = characters[i].name
+                tabCtrl.name = ExplorerService.shared.explorers[i].classic.name
                 let oneCharacterVC = tabCtrl.viewControllers![0] as! OneCharacterViewController
-                oneCharacterVC.character = characters[i]
+                oneCharacterVC.character = ExplorerService.shared.explorers[i].classic
                 let exalteVC = tabCtrl.viewControllers![1] as! ExalteViewController
-                exalteVC.character = characters[i]
+                exalteVC.character = ExplorerService.shared.explorers[i].exalte
             }
         }
     }
