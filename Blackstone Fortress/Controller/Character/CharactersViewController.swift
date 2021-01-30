@@ -29,7 +29,7 @@ class CharactersViewController: UITableViewController {
     }
     
     private func getCharacters() {
-        AF.request("http://localhost:3000/character").responseJSON { response in
+        AF.request("http://localhost:3000/character/6013de2acbddc40719b5f67a").responseJSON { response in
             do {
                 let jsonData = response.data!
                 let json = try JSON(data: jsonData)
@@ -37,33 +37,30 @@ class CharactersViewController: UITableViewController {
 
                 for (_, value) in res {
                     
-                   // if let name = value["name"].string {
-                   //      self.perso = Character(name: name)
-                   //     self.characters.append(self.perso)
-                   //   }
+                    print(value)
                     
-                    self.character = Character(name: value["name"].string!, image: value["image"].string!,
-                                           vaisseau_id: value["vaisseau_id"].string!,
-                                           life: value["life"].int!, movement: value["movement"].int!,
-                                           defense: value["defense"].string!,
-                                           defense_exalte: value["defense_exalte"].string!,
-                                           agility: value["agility"].string!,
-                                           agility_exalte: value["agility_exalte"].string!,
-                                           vitality: value["vitality"].string!,
-                                           vitality_exalte: value["vitality_exalte"].string!,
-                                           capacity: value["capacity"].array!,
-                                           capacity_exalte: value["capacity_exalte"].array!,
-                                           specialAttack: value["specialAttack"].string!,
-                                           specialAttack_exalte: value["specialAttack_exalte"].string!,
-                                           specialRole: value["specialRole"].array!,
-                                           specialRole_exalte: value["specialRole_exalte"].array!,
-                                           exalte: value["exalte"].array!,
-                                           uniqueattack: value["uniqueattack"].array!,
-                                           uniqueattack_exalte: value["uniqueattack_exalte"].array!)
-                    
-                    self.characters.append(self.character)
+//                    self.character = Character(name: value["name"].string!, image: value["image"].string!,
+//                                           vaisseau_id: value["vaisseau_id"].string!,
+//                                           life: value["life"].int!, movement: value["movement"].int!,
+//                                           defense: value["defense"].string!,
+//                                           defense_exalte: value["defense_exalte"].string!,
+//                                           agility: value["agility"].string!,
+//                                           agility_exalte: value["agility_exalte"].string!,
+//                                           vitality: value["vitality"].string!,
+//                                           vitality_exalte: value["vitality_exalte"].string!,
+//                                           capacity: value["capacity"].array!,
+//                                           capacity_exalte: value["capacity_exalte"].array!,
+//                                           specialAttack: value["specialAttack"].string!,
+//                                           specialAttack_exalte: value["specialAttack_exalte"].string!,
+//                                           specialRole: value["specialRole"].array!,
+//                                           specialRole_exalte: value["specialRole_exalte"].array!,
+//                                           exalte: value["exalte"].array!,
+//                                           uniqueattack: value["uniqueattack"].array!,
+//                                           uniqueattack_exalte: value["uniqueattack_exalte"].array!)
+//
+//                    self.characters.append(self.character)
                 }
-                self.CharacterTable.reloadData()
+//                self.CharacterTable.reloadData()
             }
             catch {
                 return
