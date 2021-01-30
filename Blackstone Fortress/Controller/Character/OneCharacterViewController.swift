@@ -10,9 +10,13 @@ import Kingfisher
 
 class OneCharacterViewController: UIViewController {
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var lifeLabel: UILabel!
+    @IBOutlet weak var moveLabel: UILabel!
+
+    @IBOutlet weak var defenseImage: UIImageView!
+    @IBOutlet weak var agilityImage: UIImageView!
+    @IBOutlet weak var vitalityImage: UIImageView!
     
     var character: Classic!
 
@@ -21,12 +25,27 @@ class OneCharacterViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        nameLabel.text = character.name
-        testLabel.text = "\(character.life)"
-        let url = URL(string: "http://localhost:3000/\(character.image)")
-        imageView.kf.setImage(with: url)
+        getImage()
+        lifeLabel.text = "Life : \(character.life)"
+        moveLabel.text = "Move : \(character.movement)"
+        getStats()
+        
     }
     
+    private func getImage() {
+        let url = URL(string: "http://localhost:3000/\(character.image)")
+        imageView.kf.setImage(with: url)
+        imageView.makeRounded()
+    }
+    
+    private func getStats() {
+        let def = character.whichSquare(variable: character.defense)
+        defenseImage.image = UIImage(named: def)
+        let agi = character.whichSquare(variable: character.agility)
+        agilityImage.image = UIImage(named: agi)
+        let vit = character.whichSquare(variable: character.vitality)
+        vitalityImage.image = UIImage(named: vit)
+    }
 
     /*
     // MARK: - Navigation
@@ -38,4 +57,17 @@ class OneCharacterViewController: UIViewController {
     }
     */
 
+}
+
+extension UIImageView {
+
+    func makeRounded() {
+
+        self.layer.borderWidth = 3
+        self.layer.masksToBounds = false
+        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.cornerRadius = self.frame.height / 2
+        self.clipsToBounds = true
+        
+    }
 }

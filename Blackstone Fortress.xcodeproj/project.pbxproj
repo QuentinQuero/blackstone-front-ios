@@ -22,7 +22,7 @@
 		C31501C125B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C31501BF25B829C800A11D3D /* Blackstone_Fortress.xcdatamodeld */; };
 		C31501C325B829C900A11D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31501C225B829C900A11D3D /* Assets.xcassets */; };
 		C31501C625B829C900A11D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31501C425B829C900A11D3D /* LaunchScreen.storyboard */; };
-		C31501DA25B835BE00A11D3D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501D925B835BE00A11D3D /* Character.swift */; };
+		C31501DA25B835BE00A11D3D /* Explorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31501D925B835BE00A11D3D /* Explorer.swift */; };
 		C3330A6225C302AD0027EA04 /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3330A6125C302AD0027EA04 /* MapCollectionViewCell.swift */; };
 		C3330A6525C329CD0027EA04 /* OneMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3330A6425C329CD0027EA04 /* OneMapViewController.swift */; };
 		C34B4B6725C16F3F0025110F /* TabStarshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B4B6625C16F3F0025110F /* TabStarshipViewController.swift */; };
@@ -31,7 +31,6 @@
 		C3632DE425BB09CD003B2607 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3632DE325BB09CD003B2607 /* CharactersViewController.swift */; };
 		C382D0CE25C063A800457483 /* OneChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382D0CD25C063A800457483 /* OneChallengeViewController.swift */; };
 		C3D4C24F25BED6F40005B7BF /* OneCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4C24E25BED6F40005B7BF /* OneCharacterViewController.swift */; };
-		C3DD11D925C5A0560002186C /* ExplorerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DD11D825C5A0560002186C /* ExplorerService.swift */; };
 		C3DD11DC25C5A05F0002186C /* Ennemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DD11DB25C5A05F0002186C /* Ennemy.swift */; };
 		C3E91E7B25C4B85B00214890 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E91E7A25C4B85B00214890 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,7 @@
 		C31501C225B829C900A11D3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C31501C525B829C900A11D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31501C725B829C900A11D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C31501D925B835BE00A11D3D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		C31501D925B835BE00A11D3D /* Explorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explorer.swift; sourceTree = "<group>"; };
 		C3330A6125C302AD0027EA04 /* MapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCollectionViewCell.swift; sourceTree = "<group>"; };
 		C3330A6425C329CD0027EA04 /* OneMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMapViewController.swift; sourceTree = "<group>"; };
 		C34B4B6625C16F3F0025110F /* TabStarshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStarshipViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +64,6 @@
 		C3632DE325BB09CD003B2607 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		C382D0CD25C063A800457483 /* OneChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneChallengeViewController.swift; sourceTree = "<group>"; };
 		C3D4C24E25BED6F40005B7BF /* OneCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCharacterViewController.swift; sourceTree = "<group>"; };
-		C3DD11D825C5A0560002186C /* ExplorerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerService.swift; sourceTree = "<group>"; };
 		C3DD11DB25C5A05F0002186C /* Ennemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ennemy.swift; sourceTree = "<group>"; };
 		C3E91E7A25C4B85B00214890 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,8 +182,7 @@
 		C3D4C24825BEC5C10005B7BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C31501D925B835BE00A11D3D /* Character.swift */,
-				C3DD11D825C5A0560002186C /* ExplorerService.swift */,
+				C31501D925B835BE00A11D3D /* Explorer.swift */,
 				C3DD11DB25C5A05F0002186C /* Ennemy.swift */,
 				C30DC5FE25C04F6600D185EA /* Starship.swift */,
 				C30DC60125C0510A00D185EA /* Challenge.swift */,
@@ -329,7 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3DD11D925C5A0560002186C /* ExplorerService.swift in Sources */,
 				C30DC5FF25C04F6600D185EA /* Starship.swift in Sources */,
 				C3D4C24F25BED6F40005B7BF /* OneCharacterViewController.swift in Sources */,
 				C30DC60E25C0524800D185EA /* ChallengesViewController.swift in Sources */,
@@ -337,7 +333,7 @@
 				C3632DE425BB09CD003B2607 /* CharactersViewController.swift in Sources */,
 				C3E91E7B25C4B85B00214890 /* HomeViewController.swift in Sources */,
 				C3DD11DC25C5A05F0002186C /* Ennemy.swift in Sources */,
-				C31501DA25B835BE00A11D3D /* Character.swift in Sources */,
+				C31501DA25B835BE00A11D3D /* Explorer.swift in Sources */,
 				C382D0CE25C063A800457483 /* OneChallengeViewController.swift in Sources */,
 				C30DC60B25C0522F00D185EA /* StarshipsViewController.swift in Sources */,
 				C34B4B6A25C16F610025110F /* AppuiStarshipViewController.swift in Sources */,

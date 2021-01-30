@@ -13,19 +13,11 @@ class CharactersViewController: UITableViewController {
 
     @IBOutlet weak var CharacterTable: UITableView!
 
-//    var characters = [Character]()
-//    var character: Character!
-    
+    var explorers = [StockExplorer]()
     var character = Array<Any>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         getCharacters()
     }
@@ -72,7 +64,7 @@ class CharactersViewController: UITableViewController {
                     
                     let stock = StockExplorer(classic: classic, exalte: exalte)
                     
-                    ExplorerService.shared.add(explorer: stock)
+                    self.explorers.append(stock)
                 }
                 self.CharacterTable.reloadData()
             }
@@ -91,14 +83,14 @@ class CharactersViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return  ExplorerService.shared.explorers.count
+        return  self.explorers.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath)
 
         // Configure the cell...
-        let name =  ExplorerService.shared.explorers[indexPath.row].classic.name
+        let name =  self.explorers[indexPath.row].classic.name
         cell.textLabel?.text = name
 
         return cell
@@ -150,12 +142,15 @@ class CharactersViewController: UITableViewController {
         if let cell = sender as? UITableViewCell {
             let i = self.tableView.indexPath(for: cell)!.row
             if segue.identifier == "segueToCharacter" {
+                
                 let tabCtrl = segue.destination as! TabCharacterViewController
-                tabCtrl.name = ExplorerService.shared.explorers[i].classic.name
+                tabCtrl.name = self.explorers[i].classic.name
+                
                 let oneCharacterVC = tabCtrl.viewControllers![0] as! OneCharacterViewController
-                oneCharacterVC.character = ExplorerService.shared.explorers[i].classic
+                oneCharacterVC.character = self.explorers[i].classic
+                
                 let exalteVC = tabCtrl.viewControllers![1] as! ExalteViewController
-                exalteVC.character = ExplorerService.shared.explorers[i].exalte
+                exalteVC.character = self.explorers[i].exalte
             }
         }
     }
