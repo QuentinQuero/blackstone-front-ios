@@ -36,7 +36,7 @@ class StarshipsViewController: UITableViewController {
 
                 for (_, value) in res {
                     
-                    self.starship = Starship(name: value["name"].string!, appui: value["appui"].string!, instalations: value["instalations"].string!, explorateur: value["explorateur"].string!)
+                    self.starship = Starship(name: value["name"].string!, appui: value["appui"].string!, instalations: value["instalations"].string!, explorateur: value["explorateur"].string!, image: value["image"].string!)
                     
                     self.starships.append(self.starship)
                 }

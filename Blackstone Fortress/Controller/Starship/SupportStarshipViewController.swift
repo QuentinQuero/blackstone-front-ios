@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SupportStarshipViewController: UIViewController {
     
     @IBOutlet weak var explorateurLabel: UILabel!
     @IBOutlet weak var supportLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var backImage: UIImageView!
     
     var starship: Starship!
 
@@ -18,11 +21,17 @@ class SupportStarshipViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.explorateurLabel.text = "Explorateur : \(starship.explorateur)"
+        getImage()
+        self.explorateurLabel.text = "\(starship.explorateur)"
         self.supportLabel.text = starship.instalations
+        self.backImage.makeRounded()
+        self.backImage.alpha = 0.85
     }
     
-
+    private func getImage() {
+        let url = URL(string: "http://localhost:3000/\(starship.image)")
+        imageView.kf.setImage(with: url)
+    }
     /*
     // MARK: - Navigation
 

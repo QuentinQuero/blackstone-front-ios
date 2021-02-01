@@ -26,8 +26,8 @@ class OneCharacterViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         getImage()
-        lifeLabel.text = "Life : \(character.life)"
-        moveLabel.text = "Move : \(character.movement)"
+        lifeLabel.text = "Vie : \(character.life)"
+        moveLabel.text = "Mouvement : \(character.movement)"
         getStats()
         
     }
@@ -68,6 +68,5 @@ extension UIImageView {
         self.layer.borderColor = UIColor.black.cgColor
         self.layer.cornerRadius = self.frame.height / 2
         self.clipsToBounds = true
-        
     }
 }
