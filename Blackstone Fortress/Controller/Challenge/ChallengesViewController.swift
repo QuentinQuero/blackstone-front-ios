@@ -33,11 +33,11 @@ class ChallengesViewController: UITableViewController {
                 let jsonData = response.data!
                 let json = try JSON(data: jsonData)
                 let res = json["data"]
-
+                
                 for (_, value) in res {
                     
-                    self.challenge = Challenge(title: value["title"].string!, description: value["description"].string!)
-                    
+                    self.challenge = Challenge(title: value["title"].string!, description: value["description"].string!, situation: value["situation"].string!)
+
                     self.challenges.append(self.challenge)
                 }
                 self.ChallengeTable.reloadData()

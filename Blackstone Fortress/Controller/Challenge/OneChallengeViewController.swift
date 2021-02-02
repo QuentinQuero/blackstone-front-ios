@@ -20,7 +20,7 @@ class OneChallengeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.titleLabel.text = challenge.title
-        self.subtitleLabel.text = "challenge.subtitle"
+        self.subtitleLabel.text = challenge.situation
         self.descriptionLabel.text = challenge.description
     }
     

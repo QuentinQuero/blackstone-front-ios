@@ -11,9 +11,11 @@ struct Challenge {
     
     var title: String
     var description: String
+    var situation: String
     
-    init(title: String, description: String) {
+    init(title: String, description: String, situation: String) {
         self.title = title
         self.description = description
+        self.situation = situation
     }
 }
