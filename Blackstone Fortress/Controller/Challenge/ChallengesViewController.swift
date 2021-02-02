@@ -25,6 +25,7 @@ class ChallengesViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         getChallenges()
+        tableView.backgroundView = UIImageView(image: UIImage(named: "background"))
     }
 
     private func getChallenges() {
@@ -60,11 +61,14 @@ class ChallengesViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ChallengeCell", for: indexPath)
-
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChallengeCell", for: indexPath) as? ChallengeTableViewCell else {
+            return UITableViewCell()
+        }
+        
         // Configure the cell...
         let title =  self.challenges[indexPath.row].title
-        cell.textLabel?.text = title
+        cell.configure(title: title)
 
         return cell
     }

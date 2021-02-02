@@ -28,6 +28,8 @@ class CharactersViewController: UITableViewController {
                 let jsonData = response.data!
                 let json = try JSON(data: jsonData)
                 let res = json["data"]
+                
+//                var test = 0
 
                 for (_, value) in res {
                     
@@ -40,12 +42,16 @@ class CharactersViewController: UITableViewController {
                     classic.agility = resClassic["agility"].string!
                     classic.vitality = resClassic["vitality"].string!
                     classic.life = resClassic["life"].string!
-//                    classic.capacity = resClassic["capacity"].array!
-//                    classic.uniqueattack = resClassic["uniqueattack"].array!
-//                    classic.specialRole = resClassic["specialRole"].array!
+                    classic.capacity = resClassic["capacity"].array!
+//                    classic.specialAttack = resClassic["specialAttack"].string!
+                    classic.specialRole = resClassic["specialRole"].array!
                     classic.image = resClassic["image"].string!
                     classic.vaisseau = resClassic["vaisseau_id"].string!
-//                    classic.exalte = resClassic["exalte"].array!
+                    classic.exalte = resClassic["exalte"].array!
+                    
+//                    print(test)
+//                    print(resClassic["specialAttack"])
+//                    test+=1
                     
                     let resExalte = value["exalte"]
                     
@@ -56,9 +62,9 @@ class CharactersViewController: UITableViewController {
                     exalte.agility = resExalte["agility"].string!
                     exalte.vitality = resExalte["vitality"].string!
                     exalte.life = resClassic["life"].string!
-//                    exalte.capacity = resExalte["capacity"].array!
-//                    exalte.uniqueattack = resExalte["uniqueattack"].array!
-//                    exalte.specialRole = resExalte["specialRole"].array!
+                    exalte.capacity = resExalte["capacity"].array!
+//                    exalte.specialAttack = resExalte["specialAttack"].string!
+                    exalte.specialRole = resExalte["specialRole"].array!
                     exalte.image = resClassic["image"].string!
                     exalte.vaisseau = resClassic["vaisseau_id"].string!
                     

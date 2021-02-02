@@ -25,6 +25,7 @@ class StarshipsViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         getStarships()
+        tableView.backgroundView = UIImageView(image: UIImage(named: "bgstarship"))
     }
 
     private func getStarships() {
@@ -61,11 +62,13 @@ class StarshipsViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "StarshipCell", for: indexPath)
-
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "StarshipCell", for: indexPath) as? StarshipTableViewCell else {
+            return UITableViewCell()
+        }
+        
         // Configure the cell...
         let name =  self.starships[indexPath.row].name
-        cell.textLabel?.text = name
+        cell.configure(title: name)
 
         return cell
     }

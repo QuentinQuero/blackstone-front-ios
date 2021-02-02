@@ -24,9 +24,9 @@ class Explorer {
     var agility: String = ""
     var vitality: String = ""
     var life: String = ""
-    var capacity: Array<AnyObject> = []
-    var uniqueattack: Array<AnyObject> = []
-    var specialRole: Array<AnyObject> = []
+    var capacity: Array<Any> = []
+    var specialAttack: String = ""
+    var specialRole: Array<Any> = []
     var image: String = ""
     var vaisseau: String = ""
     
@@ -51,7 +51,7 @@ class Explorer {
 }
 
 class Classic: Explorer {
-    var exalte: Array<AnyObject> = []
+    var exalte: Array<Any> = []
 }
 
 class Exalte: Explorer {
