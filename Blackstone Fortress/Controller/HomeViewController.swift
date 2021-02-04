@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var characterButton: UIButton!
     @IBOutlet weak var starshipButton: UIButton!
     @IBOutlet weak var explorationButton: UIButton!
+    
+    @IBOutlet weak var youtubePlayer: YTPlayerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,9 @@ class HomeViewController: UIViewController {
         roundCorner(button: characterButton)
         roundCorner(button: starshipButton)
         roundCorner(button: explorationButton)
+        
+        youtubePlayer.load(withVideoId: "THr3cB1n0VM", playerVars: ["playsinline": "1"]
+        )
     }
     
     override func viewWillAppear(_ animated: Bool) {
