@@ -29,8 +29,20 @@ class OneCharacterViewController: UIViewController {
         lifeLabel.text = "Vie : \(character.life)"
         moveLabel.text = "Mouvement : \(character.movement)"
         getStats()
-        
+//        getSpecialRule()
     }
+    
+//    private func getSpecialRule() {
+//        let number = self.character.specialRole.count
+//        var i = 0
+//
+//        while i < number {
+//            print(self.character.specialRole[i]["name"])
+////            self.specialRuleLabel.text! += (self.character.specialRole[i] as AnyObject).string!
+//            i += 1
+//            print(i)
+//        }
+//    }
     
     private func getImage() {
         let url = URL(string: "http://localhost:3000/\(character.image)")
