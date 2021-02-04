@@ -87,6 +87,13 @@
                                                     <segue destination="AJb-lj-3qh" kind="show" id="wR6-Jz-3Lo"/>
                                                 </connections>
                                             </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="doB-zD-NCB" customClass="YTPlayerView">
+                                                <rect key="frame" x="8" y="557" width="374" height="210.33333333333337"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="doB-zD-NCB" secondAttribute="height" multiplier="16:9" id="NA4-aD-3ks"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -94,10 +101,13 @@
                                             <constraint firstItem="m4w-dM-EyR" firstAttribute="centerX" secondItem="dbA-Ig-DBv" secondAttribute="centerX" id="9SS-AI-Lxn"/>
                                             <constraint firstItem="m4w-dM-EyR" firstAttribute="top" secondItem="dbA-Ig-DBv" secondAttribute="top" constant="20" symbolic="YES" id="MkK-Hq-37r"/>
                                             <constraint firstItem="KYF-ES-BAU" firstAttribute="top" secondItem="m4w-dM-EyR" secondAttribute="bottom" constant="30" id="Nzz-14-RxL"/>
+                                            <constraint firstItem="doB-zD-NCB" firstAttribute="top" secondItem="RO5-e3-lZ5" secondAttribute="bottom" constant="30" id="Ri7-9S-LGp"/>
                                             <constraint firstItem="RO5-e3-lZ5" firstAttribute="top" secondItem="KYF-ES-BAU" secondAttribute="bottom" constant="30" id="aDe-Af-G5a"/>
                                             <constraint firstAttribute="height" constant="1000" id="aPF-Fs-l2s"/>
+                                            <constraint firstItem="doB-zD-NCB" firstAttribute="leading" secondItem="dbA-Ig-DBv" secondAttribute="leadingMargin" id="fDC-h0-dL8"/>
                                             <constraint firstItem="RO5-e3-lZ5" firstAttribute="centerX" secondItem="dbA-Ig-DBv" secondAttribute="centerX" id="g5b-43-Pgr"/>
                                             <constraint firstItem="RO5-e3-lZ5" firstAttribute="top" secondItem="KYF-ES-BAU" secondAttribute="bottom" constant="30" id="iPT-jq-pYD"/>
+                                            <constraint firstItem="doB-zD-NCB" firstAttribute="centerX" secondItem="RO5-e3-lZ5" secondAttribute="centerX" id="pZo-M8-tM0"/>
                                             <constraint firstAttribute="bottom" secondItem="RO5-e3-lZ5" secondAttribute="bottom" constant="473" id="rY1-nu-vcn"/>
                                             <constraint firstItem="KYF-ES-BAU" firstAttribute="centerX" secondItem="dbA-Ig-DBv" secondAttribute="centerX" id="v24-Aa-nO1"/>
                                         </constraints>
@@ -131,6 +141,7 @@
                         <outlet property="characterButton" destination="m4w-dM-EyR" id="wfF-89-8HX"/>
                         <outlet property="explorationButton" destination="RO5-e3-lZ5" id="fQ8-jX-scX"/>
                         <outlet property="starshipButton" destination="KYF-ES-BAU" id="BJY-ip-ZL7"/>
+                        <outlet property="youtubePlayer" destination="doB-zD-NCB" id="GgE-Si-IST"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DiY-us-UHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
